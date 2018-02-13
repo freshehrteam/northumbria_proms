@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=91e5614f-2336-49ff-a066-2ab8183bda70)
 	openEHR-EHR-OBSERVATION.atrs.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-10-02">
 	>
 	details = <
@@ -20,16 +20,22 @@ description
 
 While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. ">
 			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"http://www.londonorthopaedicsurgery.co.uk/media/1467/ATRS-questionnaire.pdf cited 02-Oct-2017">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"038933B23677FBFE9FF69C015B7F7A95">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"47A9D1B448528B96631A7A68885D9D11">
+		["build_uid"] = <"1d94d904-434c-4aa0-b209-e472f4c15b9a">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -147,6 +153,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	terminologies_available = <"en", ...>

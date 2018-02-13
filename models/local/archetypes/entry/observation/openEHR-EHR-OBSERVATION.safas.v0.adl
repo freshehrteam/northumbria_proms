@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=2b81bbd4-9e0f-45d8-837a-41d87e42ffb5)
 	openEHR-EHR-OBSERVATION.safas.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-10-24">
 	>
 	details = <
@@ -18,17 +18,23 @@ description
 			purpose = <"For the capture and reporting of details of the Sports Athlete Foot and Ankle Score (SAFAS). This is a patient reported outcomes measure (PROM).">
 			use = <"Use to record details of the Sports Athlete Foot and Ankle Score (SAFAS).
 
-While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. ">
+While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists.">
 			keywords = <"foot, ankle, SAFAS, injury, score", ...>
 			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
-			copyright = <"© openEHR Foundation">
+			copyright = <"© openEHR Foundation, Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"NotSet">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"A3315D00BA4E4B765366CA1FB3353AA9">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"6FFD1F244B9D521028304196AF8502C2">
+		["build_uid"] = <"0a797e2f-f5bc-4b91-8792-8db44ecb6582">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -38,7 +44,7 @@ definition
 				events cardinality matches {1..*; unordered} matches {
 					POINT_EVENT[at0002] occurrences matches {0..1} matches {	-- Point in time
 						data matches {
-							ITEM_TREE[at0003] matches {	-- ItemTree
+							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
 									CLUSTER[at0122] occurrences matches {0..1} matches {	-- Symptoms
 										items cardinality matches {1..*; unordered} matches {
@@ -445,7 +451,7 @@ definition
 							}
 						}
 						state matches {
-							ITEM_TREE[at0004] matches {	-- ItemTree
+							ITEM_TREE[at0004] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
 									ELEMENT[at0036] occurrences matches {0..*} matches {	-- Confounding factors
 										value matches {
@@ -460,7 +466,7 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0011] matches {	-- ItemTree
+			ITEM_TREE[at0011] matches {	-- Tree
 				items cardinality matches {0..*; unordered} matches {
 					allow_archetype CLUSTER[at0037] occurrences matches {0..*} matches {	-- Extension
 						include
@@ -470,6 +476,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	terminologies_available = <"en", ...>
@@ -482,16 +489,19 @@ ontology
 				>
 				["at0001"] = <
 					text = <"History">
+					description = <"@ internal @">
 				>
 				["at0002"] = <
 					text = <"Point in time">
 					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
 				>
 				["at0003"] = <
-					text = <"ItemTree">
+					text = <"Tree">
+					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"ItemTree">
+					text = <"Tree">
+					description = <"@ internal @">
 				>
 				["at0005"] = <
 					text = <"Swollen foot or ankle">
@@ -522,7 +532,8 @@ To what extent has your foot/ankle been swollen during the last week?">
 To what extent have you felt grinding, heard clicking or any other type of noise when your foot/ankle moved?">
 				>
 				["at0011"] = <
-					text = <"ItemTree">
+					text = <"Tree">
+					description = <"@ internal @">
 				>
 				["at0012"] = <
 					text = <"Swollen foot or ankle after low impact activity">
@@ -769,23 +780,23 @@ To what extent have you experienced pain in the joint?">
 				>
 				["at0069"] = <
 					text = <"Extreme">
-					description = <"The patient experienced extreme pain in foot/ankle when at rest in last week. ">
+					description = <"The patient experienced extreme pain in foot/ankle when at rest in last week.">
 				>
 				["at0070"] = <
 					text = <"Severe">
-					description = <"The patient experienced severe pain in foot/ankle when at rest in last week. ">
+					description = <"The patient experienced severe pain in foot/ankle when at rest in last week.">
 				>
 				["at0071"] = <
 					text = <"Moderate">
-					description = <"The patient experienced moderate pain in foot/ankle when at rest in last week. ">
+					description = <"The patient experienced moderate pain in foot/ankle when at rest in last week.">
 				>
 				["at0072"] = <
 					text = <"Mild">
-					description = <"The patient experienced mild pain in foot/ankle when at rest in last week. ">
+					description = <"The patient experienced mild pain in foot/ankle when at rest in last week.">
 				>
 				["at0073"] = <
 					text = <"None">
-					description = <"The patient experienced no pain in foot/ankle when at rest in last week. ">
+					description = <"The patient experienced no pain in foot/ankle when at rest in last week.">
 				>
 				["at0074"] = <
 					text = <"Pain during full weight bearing">

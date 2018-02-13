@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=04a69f39-ecc4-429a-9117-779cdf4316ed)
 	openEHR-EHR-OBSERVATION.aos_score.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-10-25">
 	>
 	details = <
@@ -20,16 +20,22 @@ description
 
 While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists.">
 			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
-			copyright = <"">
+			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"Initial">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"www.researchgate.net/publication/299098820_Ankle_osteoarthritis_scale cited 25-Oct-2017.">
 		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["MD5-CAM-1.0.1"] = <"651369F9AF91094D6BEEA617D6B1B50E">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"EA3E4DC6B15742FB71A0DC5ADB78B63A">
+		["build_uid"] = <"180a4d33-cafe-4a06-a4d0-9943419b0573">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -239,6 +245,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	terminologies_available = <"en", ...>

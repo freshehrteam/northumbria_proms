@@ -5863,7 +5863,246 @@
                                     <lower_unbounded>false</lower_unbounded>
                                     <upper_unbounded>false</upper_unbounded>
                                     <lower>0</lower>
-                                    <upper>64</upper>
+                                    <upper>300</upper>
+                                  </range>
+                                </item>
+                              </children>
+                            </attributes>
+                          </children>
+                        </attributes>
+                      </children>
+                      <children xsi:type="C_COMPLEX_OBJECT">
+                        <rm_type_name>ELEMENT</rm_type_name>
+                        <occurrences>
+                          <lower_included>true</lower_included>
+                          <upper_included>true</upper_included>
+                          <lower_unbounded>false</lower_unbounded>
+                          <upper_unbounded>false</upper_unbounded>
+                          <lower>0</lower>
+                          <upper>1</upper>
+                        </occurrences>
+                        <node_id>at0105</node_id>
+                        <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                          <rm_attribute_name>value</rm_attribute_name>
+                          <existence>
+                            <lower_included>true</lower_included>
+                            <upper_included>true</upper_included>
+                            <lower_unbounded>false</lower_unbounded>
+                            <upper_unbounded>false</upper_unbounded>
+                            <lower>0</lower>
+                            <upper>1</upper>
+                          </existence>
+                          <children xsi:type="C_COMPLEX_OBJECT">
+                            <rm_type_name>DV_COUNT</rm_type_name>
+                            <occurrences>
+                              <lower_included>true</lower_included>
+                              <upper_included>true</upper_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>false</upper_unbounded>
+                              <lower>1</lower>
+                              <upper>1</upper>
+                            </occurrences>
+                            <node_id />
+                            <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                              <rm_attribute_name>magnitude</rm_attribute_name>
+                              <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>1</lower>
+                                <upper>1</upper>
+                              </existence>
+                              <children xsi:type="C_PRIMITIVE_OBJECT">
+                                <rm_type_name>INTEGER</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>1</lower>
+                                  <upper>1</upper>
+                                </occurrences>
+                                <node_id />
+                                <item xsi:type="C_INTEGER">
+                                  <range>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>true</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>false</upper_unbounded>
+                                    <lower>0</lower>
+                                    <upper>100</upper>
+                                  </range>
+                                </item>
+                              </children>
+                            </attributes>
+                          </children>
+                        </attributes>
+                      </children>
+                      <children xsi:type="C_COMPLEX_OBJECT">
+                        <rm_type_name>ELEMENT</rm_type_name>
+                        <occurrences>
+                          <lower_included>true</lower_included>
+                          <upper_included>true</upper_included>
+                          <lower_unbounded>false</lower_unbounded>
+                          <upper_unbounded>false</upper_unbounded>
+                          <lower>0</lower>
+                          <upper>1</upper>
+                        </occurrences>
+                        <node_id>at0106</node_id>
+                        <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                          <rm_attribute_name>value</rm_attribute_name>
+                          <existence>
+                            <lower_included>true</lower_included>
+                            <upper_included>true</upper_included>
+                            <lower_unbounded>false</lower_unbounded>
+                            <upper_unbounded>false</upper_unbounded>
+                            <lower>0</lower>
+                            <upper>1</upper>
+                          </existence>
+                          <children xsi:type="C_COMPLEX_OBJECT">
+                            <rm_type_name>DV_COUNT</rm_type_name>
+                            <occurrences>
+                              <lower_included>true</lower_included>
+                              <upper_included>true</upper_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>false</upper_unbounded>
+                              <lower>1</lower>
+                              <upper>1</upper>
+                            </occurrences>
+                            <node_id />
+                          </children>
+                        </attributes>
+                      </children>
+                      <children xsi:type="C_COMPLEX_OBJECT">
+                        <rm_type_name>ELEMENT</rm_type_name>
+                        <occurrences>
+                          <lower_included>true</lower_included>
+                          <upper_included>true</upper_included>
+                          <lower_unbounded>false</lower_unbounded>
+                          <upper_unbounded>false</upper_unbounded>
+                          <lower>0</lower>
+                          <upper>1</upper>
+                        </occurrences>
+                        <node_id>at0107</node_id>
+                        <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                          <rm_attribute_name>value</rm_attribute_name>
+                          <existence>
+                            <lower_included>true</lower_included>
+                            <upper_included>true</upper_included>
+                            <lower_unbounded>false</lower_unbounded>
+                            <upper_unbounded>false</upper_unbounded>
+                            <lower>0</lower>
+                            <upper>1</upper>
+                          </existence>
+                          <children xsi:type="C_COMPLEX_OBJECT">
+                            <rm_type_name>DV_COUNT</rm_type_name>
+                            <occurrences>
+                              <lower_included>true</lower_included>
+                              <upper_included>true</upper_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>false</upper_unbounded>
+                              <lower>1</lower>
+                              <upper>1</upper>
+                            </occurrences>
+                            <node_id />
+                            <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                              <rm_attribute_name>magnitude</rm_attribute_name>
+                              <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>1</lower>
+                                <upper>1</upper>
+                              </existence>
+                              <children xsi:type="C_PRIMITIVE_OBJECT">
+                                <rm_type_name>INTEGER</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>1</lower>
+                                  <upper>1</upper>
+                                </occurrences>
+                                <node_id />
+                                <item xsi:type="C_INTEGER">
+                                  <range>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>true</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>false</upper_unbounded>
+                                    <lower>0</lower>
+                                    <upper>100</upper>
+                                  </range>
+                                </item>
+                              </children>
+                            </attributes>
+                          </children>
+                        </attributes>
+                      </children>
+                      <children xsi:type="C_COMPLEX_OBJECT">
+                        <rm_type_name>ELEMENT</rm_type_name>
+                        <occurrences>
+                          <lower_included>true</lower_included>
+                          <upper_included>true</upper_included>
+                          <lower_unbounded>false</lower_unbounded>
+                          <upper_unbounded>false</upper_unbounded>
+                          <lower>0</lower>
+                          <upper>1</upper>
+                        </occurrences>
+                        <node_id>at0108</node_id>
+                        <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                          <rm_attribute_name>value</rm_attribute_name>
+                          <existence>
+                            <lower_included>true</lower_included>
+                            <upper_included>true</upper_included>
+                            <lower_unbounded>false</lower_unbounded>
+                            <upper_unbounded>false</upper_unbounded>
+                            <lower>0</lower>
+                            <upper>1</upper>
+                          </existence>
+                          <children xsi:type="C_COMPLEX_OBJECT">
+                            <rm_type_name>DV_COUNT</rm_type_name>
+                            <occurrences>
+                              <lower_included>true</lower_included>
+                              <upper_included>true</upper_included>
+                              <lower_unbounded>false</lower_unbounded>
+                              <upper_unbounded>false</upper_unbounded>
+                              <lower>1</lower>
+                              <upper>1</upper>
+                            </occurrences>
+                            <node_id />
+                            <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                              <rm_attribute_name>magnitude</rm_attribute_name>
+                              <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>1</lower>
+                                <upper>1</upper>
+                              </existence>
+                              <children xsi:type="C_PRIMITIVE_OBJECT">
+                                <rm_type_name>INTEGER</rm_type_name>
+                                <occurrences>
+                                  <lower_included>true</lower_included>
+                                  <upper_included>true</upper_included>
+                                  <lower_unbounded>false</lower_unbounded>
+                                  <upper_unbounded>false</upper_unbounded>
+                                  <lower>1</lower>
+                                  <upper>1</upper>
+                                </occurrences>
+                                <node_id />
+                                <item xsi:type="C_INTEGER">
+                                  <range>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>true</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>false</upper_unbounded>
+                                    <lower>0</lower>
+                                    <upper>100</upper>
                                   </range>
                                 </item>
                               </children>
@@ -6505,8 +6744,24 @@ During the past 4 weeks have you been troubled by pain from your foot/ankle in b
           <items id="text">No nights</items>
         </term_definitions>
         <term_definitions code="at0104">
-          <items id="description">Total score from Questions 1 to 16.</items>
+          <items id="description">Total score from Questions 1 to 16, weighted according to these rules: sum of Questions 1,11,12,15 and 16 multiplied by 5 PLUS sum of Questions 2-8 multiplied by 3.57 PLUS sum of Questions 9, 10, 13 and 14 multiplied by 6.25 rounded to nearest integer.</items>
           <items id="text">Total score</items>
+        </term_definitions>
+        <term_definitions code="at0105">
+          <items id="description">Average score from Questions 1-16, weighted according to these rules: sum of Questions 1,11,12,15 and 16 multiplied by 5 PLUS sum of Questions 2-8 multiplied by 3.57 PLUS sum of Questions 9, 10, 13 and 14 multiplied by 6.25, rounded to nearest integer.</items>
+          <items id="text">Average score</items>
+        </term_definitions>
+        <term_definitions code="at0106">
+          <items id="description">Total pain score calculated from Questions 1, 11,12,15 and 16 multiplied by 5 rounded to nearest integer.</items>
+          <items id="text">Pain score</items>
+        </term_definitions>
+        <term_definitions code="at0107">
+          <items id="description">Total score from questions 2-8 multiplied by 3.57 and rounded to nearest integer.</items>
+          <items id="text">Walking and standing score</items>
+        </term_definitions>
+        <term_definitions code="at0108">
+          <items id="description">Total score from questions 9, 10, 13 and 14 multiplied by 6.25 and rounded to nearest integer.</items>
+          <items id="text">Social interaction score</items>
         </term_definitions>
       </children>
       <children xsi:type="C_ARCHETYPE_ROOT">
@@ -11347,6 +11602,7 @@ During the past 4 weeks have you been troubled by pain from your foot/ankle in b
           <items id="text">SAFAS Score</items>
         </term_definitions>
         <term_definitions code="at0001">
+          <items id="description">@ internal @</items>
           <items id="text">History</items>
         </term_definitions>
         <term_definitions code="at0002">
@@ -11354,10 +11610,12 @@ During the past 4 weeks have you been troubled by pain from your foot/ankle in b
           <items id="text">Point in time</items>
         </term_definitions>
         <term_definitions code="at0003">
-          <items id="text">ItemTree</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0004">
-          <items id="text">ItemTree</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0005">
           <items id="comment">Questionnaire wording:
@@ -11388,7 +11646,8 @@ To what extent have you felt grinding, heard clicking or any other type of noise
           <items id="text">Grinding or noise when moving foot or ankle</items>
         </term_definitions>
         <term_definitions code="at0011">
-          <items id="text">ItemTree</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0012">
           <items id="comment">Questionnaire wording:
@@ -11634,23 +11893,23 @@ To what extent have you experienced pain in the joint?</items>
           <items id="text">Pain at rest (sitting)</items>
         </term_definitions>
         <term_definitions code="at0069">
-          <items id="description">The patient experienced extreme pain in foot/ankle when at rest in last week. </items>
+          <items id="description">The patient experienced extreme pain in foot/ankle when at rest in last week.</items>
           <items id="text">Extreme</items>
         </term_definitions>
         <term_definitions code="at0070">
-          <items id="description">The patient experienced severe pain in foot/ankle when at rest in last week. </items>
+          <items id="description">The patient experienced severe pain in foot/ankle when at rest in last week.</items>
           <items id="text">Severe</items>
         </term_definitions>
         <term_definitions code="at0071">
-          <items id="description">The patient experienced moderate pain in foot/ankle when at rest in last week. </items>
+          <items id="description">The patient experienced moderate pain in foot/ankle when at rest in last week.</items>
           <items id="text">Moderate</items>
         </term_definitions>
         <term_definitions code="at0072">
-          <items id="description">The patient experienced mild pain in foot/ankle when at rest in last week. </items>
+          <items id="description">The patient experienced mild pain in foot/ankle when at rest in last week.</items>
           <items id="text">Mild</items>
         </term_definitions>
         <term_definitions code="at0073">
-          <items id="description">The patient experienced no pain in foot/ankle when at rest in last week. </items>
+          <items id="description">The patient experienced no pain in foot/ankle when at rest in last week.</items>
           <items id="text">None</items>
         </term_definitions>
         <term_definitions code="at0074">
@@ -14288,6 +14547,7 @@ C. If you have pain that stops you from completing your training/practice in Ach
           <items id="text">Foot and ankle outcome</items>
         </term_definitions>
         <term_definitions code="at0001">
+          <items id="description">@ internal @</items>
           <items id="text">History</items>
         </term_definitions>
         <term_definitions code="at0002">
@@ -14295,13 +14555,16 @@ C. If you have pain that stops you from completing your training/practice in Ach
           <items id="text">Point in time</items>
         </term_definitions>
         <term_definitions code="at0003">
-          <items id="text">ItemTree</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0004">
-          <items id="text">ItemTree</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0005">
-          <items id="text">ItemTree</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0006">
           <items id="comment">e.g. Local hospital departmental infomation or additional metadata to align with HL7 or CDISC equivalents.</items>

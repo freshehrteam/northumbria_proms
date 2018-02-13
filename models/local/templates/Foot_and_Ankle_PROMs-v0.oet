@@ -931,36 +931,36 @@
     </Context>
   </definition>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.report.v1">
-    <digest id="MD5-CAM-1.0.1">FD053BE0456D849CACD864F274EED32E</digest>
+    <digest id="MD5-CAM-1.0.1">1DA7D8EDC23CF1B673C05E6E8FE28EB1</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.episode_details_northproms.v0">
-    <digest id="MD5-CAM-1.0.1">E95CF5052FC6C560468EC0CBBA9A7E5D</digest>
+    <digest id="MD5-CAM-1.0.1">5F483D9FE5344C3EF8AE7641861A8CF3</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.aofas.v0">
-    <digest id="MD5-CAM-1.0.1">4C667BA8659F3A94856F3B35E4A9F996</digest>
+    <digest id="MD5-CAM-1.0.1">15F3F798FEAD832164609AC430843C76</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.aos_score.v0">
-    <digest id="MD5-CAM-1.0.1">651369F9AF91094D6BEEA617D6B1B50E</digest>
+    <digest id="MD5-CAM-1.0.1">EA3E4DC6B15742FB71A0DC5ADB78B63A</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.atrs.v0">
-    <digest id="MD5-CAM-1.0.1">038933B23677FBFE9FF69C015B7F7A95</digest>
+    <digest id="MD5-CAM-1.0.1">47A9D1B448528B96631A7A68885D9D11</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.moxfq.v0">
-    <digest id="MD5-CAM-1.0.1">EE64BB3985DF45ADFE20D56CC77EE523</digest>
+    <digest id="MD5-CAM-1.0.1">90D23C4494D9E69F6D4519A399CFDB4B</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.story.v1">
     <digest id="MD5-CAM-1.0.1">1A6AFF556A3135480517C4E830985332</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.pain_vas.v0">
-    <digest id="MD5-CAM-1.0.1">FB81D2FDF5B2A44F597DAA7D07D03708</digest>
+    <digest id="MD5-CAM-1.0.1">1019D8BBB744A0EF5524223458710948</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.safas.v0">
-    <digest id="MD5-CAM-1.0.1">A3315D00BA4E4B765366CA1FB3353AA9</digest>
+    <digest id="MD5-CAM-1.0.1">6FFD1F244B9D521028304196AF8502C2</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.visaa.v0">
-    <digest id="MD5-CAM-1.0.1">3A2E53781B8817E2B5E9AF6FAD5E4A5E</digest>
+    <digest id="MD5-CAM-1.0.1">AD72FFBC053D76F93027DCD541E8BA3E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.foot_and_ankle_outcome.v0">
-    <digest id="MD5-CAM-1.0.1">23658C721791790697F2C138C588AAA5</digest>
+    <digest id="MD5-CAM-1.0.1">1127718A2C62682BF5CFD4A01BDEF409</digest>
   </integrity_checks>
 </template>

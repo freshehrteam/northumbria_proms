@@ -1,4 +1,4 @@
-archetype (adl_version=1.4)
+﻿archetype (adl_version=1.4; uid=e281e1a0-a16b-4ee2-8630-b558824e83b9)
 	openEHR-EHR-OBSERVATION.foot_and_ankle_outcome.v0
 
 concept
@@ -8,8 +8,8 @@ language
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["email"] = <"hildi@freshehr.com">
 		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
+		["email"] = <"hildi@freshehr.com">
 		["date"] = <"2017-10-25">
 	>
 	details = <
@@ -19,14 +19,20 @@ description
 			use = <"Use to record patient-reported outcome from foot and ankle surgery.">
 			keywords = <"foot, ankle, outcome", ...>
 			misuse = <"">
-			copyright = <"© openEHR Foundation">
+			copyright = <"© openEHR Foundation, Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"NotSet">
+	lifecycle_state = <"in_development">
 	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["MD5-CAM-1.0.1"] = <"23658C721791790697F2C138C588AAA5">
+		["custodian_organisation"] = <"UK Clinical Models">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["original_publisher"] = <"UK Clinical Models">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"1127718A2C62682BF5CFD4A01BDEF409">
+		["build_uid"] = <"3bee036e-e9af-4dff-9682-138296efd051">
+		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
@@ -36,7 +42,7 @@ definition
 				events cardinality matches {1..*; unordered} matches {
 					POINT_EVENT[at0002] occurrences matches {0..1} matches {	-- Point in time
 						data matches {
-							ITEM_TREE[at0003] matches {	-- ItemTree
+							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
 									ELEMENT[at0008] occurrences matches {0..1} matches {	-- Foot and ankle outcome
 										value matches {
@@ -50,7 +56,7 @@ definition
 							}
 						}
 						state matches {
-							ITEM_TREE[at0004] matches {	-- ItemTree
+							ITEM_TREE[at0004] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
 									ELEMENT[at0007] occurrences matches {0..*} matches {	-- Confounding factors
 										value matches {
@@ -65,7 +71,7 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0005] matches {	-- ItemTree
+			ITEM_TREE[at0005] matches {	-- Tree
 				items cardinality matches {0..*; unordered} matches {
 					allow_archetype CLUSTER[at0006] occurrences matches {0..1} matches {	-- Extension
 						include
@@ -75,6 +81,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	terminologies_available = <"en", ...>
@@ -87,19 +94,23 @@ ontology
 				>
 				["at0001"] = <
 					text = <"History">
+					description = <"@ internal @">
 				>
 				["at0002"] = <
 					text = <"Point in time">
 					description = <"A specific date and/or time which may be explicitly defined in a template or at run-time.">
 				>
 				["at0003"] = <
-					text = <"ItemTree">
+					text = <"Tree">
+					description = <"@ internal @">
 				>
 				["at0004"] = <
-					text = <"ItemTree">
+					text = <"Tree">
+					description = <"@ internal @">
 				>
 				["at0005"] = <
-					text = <"ItemTree">
+					text = <"Tree">
+					description = <"@ internal @">
 				>
 				["at0006"] = <
 					text = <"Extension">
