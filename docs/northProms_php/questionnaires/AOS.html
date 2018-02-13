@@ -1,0 +1,278 @@
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NHS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../home.html">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+
+  <style>
+body{
+  /*background-image: url("http://www.europeanceo.comwp-content/uploads/2014/01/Stethoscope.jpg");*/
+    background-position: center;
+  background-size: cover;
+  font-weight: bold;
+}
+</style>
+<!-------------------------CSS----------------------------above---------->
+
+<!-- html page for patient to answer quesionnaire and post the answers for quesrionnare to corresponding php code by form handling -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+<div id=page-wrap>
+
+    <title>AOS</title>
+
+<style>
+    h1{
+      border-bottom-style: solid;
+
+    }
+h1{
+      font-family: serif;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    p{
+      
+      font-weight: bold;
+    }
+
+    input{
+      margin: 20px;
+      display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=submit]{
+    background-color: #007A25;
+    color: white;
+    padding: 8px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    </style>
+
+
+     </head>
+    
+    <body>
+    
+      <div id=page-wrap>
+        
+        <h1>AOS</h1>
+<h2>Ankle Osteoarthritis Scale: RIGHT SIDE</h2>    
+
+        <form action="AOS.php" method="post">
+        
+            
+            <P>Questions: How severe was your ankle pain:</P>
+   
+            1.At its worst? 
+            <input type="text" name="p1" ><br>
+      
+            2. Before you get up in the morning?
+            <input type="text" name="p2" ><br>
+            
+            3. When you walked barefoot?
+             <input type="text" name="p3" ><br>
+            
+            4. When you stood barefoot?
+            <input type="text" name="p4" ><br>
+            
+            5. When you walked wearing shoes?
+             <input type="text" name="p5" ><br>
+            
+            6. When you stood wearing shoes?
+             <input type="text" name="p6" ><br>
+            
+           7. When you walked wearing shoe inserts or braces?
+             <input type="text" name="p7" ><br>
+            
+           8. When you stood wearing shoe inserts or braces?
+             <input type="text" name="p8" ><br>
+            
+          9. At the end of the day?
+             <input type="text" name="p9" ><br>
+            
+       <br> <br>    
+   <em>INSTRUCTION:</em> <div> The line next to each item represents the amount of difficulty you had performing an activity. On the far left is “No difficulty” and on the far right is “So difficult unable.” Place a mark on the line to indicate how much difficulty you had performing each activity because of your ankle during the past week. If you did not perform an activity during the past week, mark that item NA.  
+            </div>
+          <br> <br>         
+       
+            
+            <P>Questions: How much difficulty did you have:</P>
+          1. Walking around the house?
+             <input type="text" name="d1" ><br>
+            
+          2. Walking outside on uneven ground?  
+             <input type="text" name="d2" ><br>
+            
+           3. Walking four blocks or more?
+             <input type="text" name="d3" ><br>
+            
+           4. Climbing stairs?
+             <input type="text" name="d4" ><br>
+            
+           5. Descending stairs?
+             <input type="text" name="d5" ><br>
+            
+            6. Standing on tip toes?
+             <input type="text" name="d6" ><br>
+            
+            7. Getting out of a chair? 
+             <input type="text" name="d7" ><br>
+          
+           8. Climbing up or down curbs?
+             <input type="text" name="d8" ><br>
+    
+          9. Walking fast or running?
+             <input type="text" name="d9" ><br>
+            
+       Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>       
+            
+
+
+            
+            <P>Anwering date:</P>       Day
+<select name='day' id='dayddl'>
+<option value='0'>0</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+<option value='13'>13</option>
+<option value='14'>14</option>
+<option value='15'>15</option>
+<option value='16'>16</option>
+<option value='17'>17</option>
+<option value='18'>18</option>
+<option value='19'>19</option>
+<option value='20'>20</option>
+<option value='21'>21</option>
+<option value='22'>22</option>
+<option value='23'>23</option>
+<option value='24'>24</option>
+<option value='25'>25</option>
+<option value='26'>26</option>
+<option value='27'>27</option>
+<option value='28'>28</option>
+<option value='29'>29</option>
+<option value='30'>30</option>
+<option value='31'>31</option>
+</select>
+
+
+Month
+<select name='month' id='monthddl'>
+<option value='0'>0</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+</select>
+
+
+Year
+<select name='year' id='blah'>
+<option value='2015'>2015</option>
+<option value='2016'>2016</option>
+<option value='2017'>2017</option>
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+<option value='2020'>2020</option>
+<option value='2021'>2021</option>
+<option value='2022'>2022</option>
+<option value='2023'>2023</option>
+<option value='2024'>2024</option>
+<option value='2025'>2025</option>
+<option value='2026'>2026</option>
+<option value='2027'>2027</option>
+<option value='2028'>2028</option>
+<option value='2029'>2029</option>
+<option value='2030'>2030</option>
+<option value='2031'>2031</option>
+<option value='2032'>2032</option>
+<option value='2033'>2033</option>
+<option value='2034'>2034</option>
+<option value='2035'>2035</option>
+<option value='2036'>2036</option>
+<option value='2037'>2037</option>
+<option value='2038'>2038</option>
+
+</select>
+            <br>
+     <br> <input type="submit" name= "submit" value="submit">
+      
+      
+ 
+      <br>
+</form>
+
+   <style>
+#page-wrap {
+     width:  1200px;
+     margin: 50px auto;
+
+
+      button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #FF0000;
+    border-radius: 8px;
+    
+}
+
+.submitbtn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    border-radius: 8px;
+}
+</style>
+
+    </body>
+</html>

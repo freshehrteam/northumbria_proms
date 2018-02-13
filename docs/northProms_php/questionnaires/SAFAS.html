@@ -1,0 +1,1296 @@
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NHS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../home.html">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  
+  <style>
+body{
+  /*background-image: url("http://www.europeanceo.comwp-content/uploads/2014/01/Stethoscope.jpg");*/
+    background-position: center;
+  background-size: cover;
+  font-weight: bold;
+}
+</style>
+
+<!-------------------------CSS----------------------------above---------->
+
+
+
+
+<!-- html page for patient to answer quesionnaire and post the answers for quesrionnare to corresponding php code by form handling -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<div id=page-wrap>
+    <title>SAFAS</title>
+     </head>
+    
+    <body>
+
+    <div id=page-wrap>
+
+
+<style>
+    h1{
+      border-bottom-style: solid;
+
+    }
+h1{
+      font-family: serif;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    p{
+      
+      font-weight: bold;
+    }
+
+    input{
+      margin: 20px;
+      display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=submit]{
+    background-color: #007A25;
+    color: white;
+    padding: 8px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    </style>
+
+
+
+    <h1>SAFAS</h1>
+    
+
+        <form action="SAFAS.php" method="post">
+        
+            <h2>Northumbria Foot & Ankle Unit
+Patient Reported Outcomes
+</h2>
+            
+            <h3>Symptoms.</h3>
+            <p>Please answer these questions thinking of the symptoms you have had during the last week due to your foot/ankle</p>
+            
+            <p>1.To what extent has your foot/ankle been swollen?</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q1" value="4">Never
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q1" value="3">Rarely
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q1" value="2" >Sometimes
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q1" value="1" >Often	 
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q1"value="0" >Always
+  </label>
+</div> 
+     
+      
+      
+       <p>2.To what extent has your foot/ankle been swollen after low impact activity?</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q2" value="4">Never
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q2" value="3">Rarely
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q2" value="2" >Sometimes
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q2" value="1" >Often	 
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q2"value="0" >Always 
+  </label>
+</div>
+     
+      
+         
+            <p>3.To what extent has your foot/ankle been swollen after heavy activity?</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q3" value="4">Never
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q3" value="3">Rarely
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q3" value="2" > Sometimes
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q3" value="1" >Often
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q3"value="0" >Always
+  </label>
+</div>
+      
+      
+         
+            <p>4.To what extent have you felt grinding, heard clicking or any other type of noise when your foot/ankle moved?</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q4" value="4">Never
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q4" value="3">Rarely
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q4" value="2" >Sometimes
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q4" value="1" >Often
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q4"value="0" >Always
+  </label>
+</div>
+      
+      
+         
+            <p>5.To what extent have you had difficulty pointing your toes towards the ground fully?</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q5" value="4">None
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q5" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q5" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q5" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q5"value="0" >Extreme 
+  </label>
+</div>
+      
+      
+         
+            <p>6.To what extent have you had difficulty moving your ankle from side to side fully?</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q6" value="4">None
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q6" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q6" value="2" > Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q6" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q6"value="0" >Extreme 
+  </label>
+</div>
+      
+      
+            <p>7.To what extent have you experienced ankle stiffness after first wakening in the morning??</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q7" value="4">None
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q7" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q7" value="2" > Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q7" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q7"value="0" >Extreme 
+  </label>
+</div>
+      
+      
+      
+            <p>8.To what extent have you experienced ankle stiffness after sitting, lying or resting later in the day?</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q8" value="4">None
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q8" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q8" value="2" > Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q8" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q8"value="0" >Extreme 
+  </label>
+</div>
+      
+      
+      
+            <p>9.To what extent have you experienced ankle stiffness after activity?</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q9" value="4">None
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q9" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q9" value="2" > Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q9" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "s9"value="0" >Extreme 
+  </label>
+</div>
+      
+      
+       <h3>Pain</h3>
+            <p>Please answer following questions thinking of the amount of pain you have experienced in your foot/ankle during the last week during following activities:</p>
+                
+      
+      <p>1.To what extent have you experienced pain in the joint?</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q10" value="4">Never                 
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q10" value="3">Rarely
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q10" value="2" > Sometimes
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q10" value="1" >Often
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q10"value="0" >Always 
+  </label>
+</div>
+      
+      
+       <p>2.At rest (sitting)</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q11" value="4">None      
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q11" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q11" value="2" > Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q11" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q11"value="0" >Extreme
+
+  </label>
+</div>
+      
+                  <p>3.During full weight bearing</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q12" value="4">None        
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q12" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q12" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q12" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q12"value="0" >Extreme
+  </label>
+</div>
+      
+                  <p>4.During low impact activity</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q13" value="4">None        
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q13" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q13" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q13" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q13"value="0" >Extreme
+
+  </label>
+</div>
+      
+                  <p>5.After low impact activity</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q14" value="4">None    
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q14" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q14" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q14" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q14"value="0" >Extreme
+
+  </label>
+</div>
+      
+                  <p>6.During heavy activity</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q15" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q15" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q15" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q15" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q15"value="0" >Extreme
+      
+      </label>
+</div>
+                  <p>7.After heavy activity</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q16" value="4">None      
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q16" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q16" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q16" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q16"value="0" >Extreme
+
+  </label>
+</div>
+      
+                  <p>8.Twisting/pivoting on your ankle</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q17" value="4">None        
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q17" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q17" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q17" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q17"value="0" >Extreme
+
+  </label>
+</div>
+      
+                  <p>9.Pointing your toes to the ground fully</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q18" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q18" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q18" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q18" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q18"value="0" >Extreme
+
+  </label>
+</div>
+      
+                  <p>10.Bending your ankle fully</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q19" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q19" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q19" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q19" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q19"value="0" >Extreme
+  </label>
+</div>
+      
+             <p>11.At night while in bed)</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q20" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q20" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q20" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q20" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q20"value="0" >Extreme
+  </label>
+</div>
+      
+             <p>12.Going upstairs</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q21" value="4">None        
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q21" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q21" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q21" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q21"value="0" >Extreme
+  </label>
+</div>
+      
+             <p>13.Going downstairs</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q22" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q22" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q22" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q22" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q22"value="0" >Extreme
+  </label>
+</div>
+      
+      
+        <h3>Daily living</h3>
+            <p>
+These questions concern ability to perform your daily activities. By this we mean your ability to move around and look after yourself. Please answer following questions thinking of how much difficulty you have experienced in the last week due to your foot/ankle.</p>
+                
+  
+                   <p>1.Rising from sitting</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q23" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q23" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q23" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q23" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q23"value="0" >Extreme
+
+  </label>
+</div>
+      
+                   <p>2.Ascending stairs</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q24" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q24" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q24" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q24" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q24"value="0" >Extreme
+
+
+  </label>
+</div>
+      
+                   <p>3.Descending stairs</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q25" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q25" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q25" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q25" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q25"value="0" >Extreme
+
+
+  </label>
+</div>
+      
+                   <p>4.Putting on socks/stockings</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q26" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q26" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q26" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q26" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q26"value="0" >Extreme
+
+  </label>
+</div>
+      
+                   <p>5.Getting in/out of bath </p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q27" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q27" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q27" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q27" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "DL5"value="0" >Extreme
+
+  </label>
+</div>
+      
+                   <p>6.Getting on/off toilet</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q28" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q28" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q28" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q28" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q28"value="0" >Extreme
+
+
+  </label>
+</div>
+      
+                   <p>7.Bending to floor/pick up an object </p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q29" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q29" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q29" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q29" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q29"value="0" >Extreme
+
+  </label>
+</div>
+      
+                   <p>8.Driving a car</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q30" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q30" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q30" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q30" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q30"value="0" >Extreme
+
+  </label>
+</div>
+      
+      
+              <h3>If you participate in sports  </h3>
+            <p>
+
+These questions concern your physical function during sporting activities. Please answer following questions thinking of what degree of difficulty you have experienced during the last week due to your foot/ankle.
+</p>
+                
+  
+                   <p>1.Squatting without extra weight</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q31" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q31" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q31" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q31" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q31"value="0" >Unable
+      </label>
+</div>
+      
+                   <p>2.Squatting with extra weight</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q32" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q32" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q32" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q32" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q32"value="0" >Unable
+      
+      </label>
+</div>
+      
+                   <p>3.Squatting on one leg (the injured ankle)</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q33" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q33" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q33" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q33" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q33"value="0" >Unable
+      
+     </label>
+</div> 
+      
+                   <p>4.Jogging</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q34" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q34" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q34" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q34" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q34"value="0" >Unable
+      
+      </label>
+</div>
+      
+                   <p>5.Running
+</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q35" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q35" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q35" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q35" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q35"value="0" >Unable
+      </label>
+</div>
+      
+      
+                   <p>6.Sudden cutting/lateral movements</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q36" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q36" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q36" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q36" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q36"value="0" >Unable
+      </label>
+</div>
+      
+      
+                   <p>7.Starting quickly
+</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q37" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q37" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q37" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q37" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q37"value="0" >Unable
+  </label>
+</div>
+      
+           <p>8.Stopping quickly</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q38" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q38" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q38" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q38" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q38"value="0" >Unable
+  </label>
+</div>
+      
+      
+      
+        <p>9.Jumping</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q39" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q39" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q39" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q39" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q39"value="0" >Unable
+   </label>
+</div>   
+      
+      
+     <p>10.Landing</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q40" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q40" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q40" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q40" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q40"value="0" >Unable
+  </label>
+</div>
+      
+      
+      
+      <p>11.Performing activity with your normal technique
+</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q41" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q41" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q41" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q41" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q41"value="0" >Unable
+  </label>
+</div>
+      
+      
+      
+     <p>12.Participating activity as long as you would like
+</p>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q42" value="4">None       
+</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name = "q42" value="3">Mild
+</label>
+</div>
+<div class="checkbox ">
+  <label><input type="checkbox" name = "q42" value="2" >Moderate
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox" name = "q42" value="1" >Severe
+
+</label>
+</div>
+            <div class="checkbox ">
+  <label><input type="checkbox"  name = "q42"value="0" >Unable
+
+  </label>
+</div>
+      
+      
+         Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>       
+     
+     
+   <P>Anwering date:</P>       Day
+<select name='day' id='dayddl'>
+<option value='0'>0</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+<option value='13'>13</option>
+<option value='14'>14</option>
+<option value='15'>15</option>
+<option value='16'>16</option>
+<option value='17'>17</option>
+<option value='18'>18</option>
+<option value='19'>19</option>
+<option value='20'>20</option>
+<option value='21'>21</option>
+<option value='22'>22</option>
+<option value='23'>23</option>
+<option value='24'>24</option>
+<option value='25'>25</option>
+<option value='26'>26</option>
+<option value='27'>27</option>
+<option value='28'>28</option>
+<option value='29'>29</option>
+<option value='30'>30</option>
+<option value='31'>31</option>
+</select>
+
+
+Month
+<select name='month' id='monthddl'>
+<option value='0'>0</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+</select>
+
+
+Year
+<select name='year' id='blah'>
+<option value='2015'>2015</option>
+<option value='2016'>2016</option>
+<option value='2017'>2017</option>
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+<option value='2020'>2020</option>
+<option value='2021'>2021</option>
+<option value='2022'>2022</option>
+<option value='2023'>2023</option>
+<option value='2024'>2024</option>
+<option value='2025'>2025</option>
+<option value='2026'>2026</option>
+<option value='2027'>2027</option>
+<option value='2028'>2028</option>
+<option value='2029'>2029</option>
+<option value='2030'>2030</option>
+<option value='2031'>2031</option>
+<option value='2032'>2032</option>
+<option value='2033'>2033</option>
+<option value='2034'>2034</option>
+<option value='2035'>2035</option>
+<option value='2036'>2036</option>
+<option value='2037'>2037</option>
+<option value='2038'>2038</option>
+</select>
+            <br> 
+     <br> <input type="submit" name= "submit" value="submit">
+      
+      
+ 
+      <br>
+</form>
+
+<style>
+#page-wrap {
+     width:  1200px;
+     margin: 50px auto;
+
+
+      button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #FF0000;
+    border-radius: 8px;
+    
+}
+
+.submitbtn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    border-radius: 8px;
+}
+</style>
+
+
+   
+    </body>
+</html>

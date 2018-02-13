@@ -1,0 +1,533 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NHS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.html">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  
+
+<style>
+body{
+  /*background-image: url("http://www.europeanceo.comwp-content/uploads/2014/01/Stethoscope.jpg");*/
+    background-position: center;
+  background-size: cover;
+  font-weight: bold;
+}
+</style>
+
+<!-------------------------CSS----------------------------above---------->
+<!-- thisis a page to input patient's information  -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Patient</title>
+
+<style>
+    h1{
+      border-bottom-style: solid;
+
+    }
+
+    input{
+      margin: 10px;
+      display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=submit]{
+    background-color: #007A25;
+    color: white;
+    padding: 8px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    </style>
+
+     </head>
+    
+    <body>
+
+<div id="page-wrap">
+    <h1>Add Patient</h1>
+
+ <style>
+    h1{
+      font-family: serif;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    </style>
+  
+    
+<div id="page-wrap">
+</style>
+          <form action="addNewPatient.php" method="post">
+            Title: <input type = "radio" name = "title"  value ="Mr"> Mr
+              <input type = "radio" name = "title"  value ="Ms"> Ms
+            <input type = "radio" name = "title"  value ="Mrs"> Mrs
+            <input type = "radio" name = "title"  value ="Miss"> Miss <br>
+            
+           Firstname: <input type="text" name="firstname" required><br>
+             
+            Surname: <input type="text" name="surname" required>  <br>
+            
+            Middlename: <input type="text" name="middlename" required>  <br>
+              
+            Forename: <input type="text" name="forename" required>  <br>
+              
+            NHS number: <input type="text" name="nhsNumber" required>  <br>
+            
+            Hospital number: <input type="text" name="hospitalNumber" required>  <br>
+            
+            Email: <input type="email" name="email" required>  <br>
+            
+            
+             Gender: <input type = "radio" name = "gender"  value ="female"> Female
+              <input type = "radio" name = "gender"  value ="Male"> Male
+            
+        <br> 
+
+
+              
+              <br>
+             Operation:  
+              <input type="text" list="search" name = "operation" /> 
+              <datalist id="search"> 
+                    <select>
+                     <option value='256'>256 First metatarsal osteotomy - Chevron</option> 
+                     <option value='303'>303 First metatarsal osteotomy - Scarf</option>
+                     <option value='305'>305 First metatarsal osteotomy - Other</option>
+                     <option value='596'>596 Akin osteotomy of proximal phalanx great toe</option>
+                     <option value='259'>259 First MTPJ soft tissue correction</option>
+                     <option value='257'>257 First MTPJ arthrodesis</option>
+                     <option value='258'>258 First MTPJ excision arthroplasty</option>
+                     <option value='347'>347 First MTPJ replacement arthroplasty (silastic or other)</option>
+                     <option value='602'>602 First MTPJ cheilectomy</option>
+                     <option value='582'>582 Gastrocnemius lengthening</option>
+                     <option value='612'>612 GPS Injection for plantar fasciitis</option>
+                     <option value='245'>245 Arthroplasty ankle</option>
+                     <option value='593'>593 Ankle cheilectomy</option>
+                     <option value='246'>246 Arthrodesis ankle - open</option>
+                     <option value='579'>579 Arthrodesis ankle - arthroscopic</option>
+                     <option value='327'>327 Tibia or fibula malunion  correction or other deformity</option>
+                     <option value='342'>342 Ankle - lateral ligament repair (Bostrom's)</option>
+                     <option value='248'>248 Arthroscopy ankle therapeutic</option>
+                     <option value='591'>591 Tibialis posterior reconstruction</option>
+                     <option value='581'>581 Tendo achilles reconstruction</option>
+                     <option value='397'>397 Irrigation and debridement prosthesis for infection - ankle</option>
+                     <option value='398'>398 Irrigation and debridement native joint for infection - ankle</option>
+                     <option value='162'>162 Arthroscopy diagnostic - shoulder</option>
+                     <option value='164'>164 Arthroscopic therapeutic procedure other than ASD or repair</option>
+                     <option value='163'>163 Arthroscopic subacromial decompression</option>
+                     <option value='407'>407 Arthroscopic arthrolysis for capsulitis of shoulder</option>
+                     <option value='543'>543 Arthroscopic biceps tenodesis</option>
+                     <option value='409'>409 Rotator cuff repair (arthroscopic) +/- acromioplasty</option>
+                     <option value='158'>158 Acromioclavicular joint excision - arthroscopic / open / lateral clavicle</option>
+                     <option value='157'>157 Acromioplasty open</option>
+                     <option value='408'>408 Rotator cuff repair (open) +/- acromioplasty</option>
+                     <option value='160'>160 Anterior repair for instability open including capsular shift</option>
+                     <option value='161'>161 Anterior repair for instability arthroscopic</option>
+                     <option value='166'>166 Posterior repair for instability including capsular shift</option>
+                     <option value='165'>165 Hemiarthroplasty shoulder (elective)</option>
+                     <option value='169'>169 Total Shoulder replacement</option>
+                     <option value='335'>335 Shoulder replacement revision</option>
+                     <option value='544'>544 Reverse polarity (Inverse) shoulder replacement</option>
+                     <option value='546'>546 Endoprosthetic replacement for malignant bone tumour - humerus</option>
+                     <option value='372'>372 Irrigation and debridement prosthesis for infection - shoulder</option>
+                     <option value='171'>171 Arthrolysis elbow (open/arthroscopic)</option>
+                     <option value='172'>172 Arthroscopy elbow diagnostic</option>
+                     <option value='173'>173 Arthroscopy elbow therapeutic</option>
+                  <option value='174'>174 Arthrotomy elbow</option>
+                  <option value='175'>175 Excision radial head +/- synovectomy</option>
+                  <option value='368'>368 OK procedure</option>
+                  <option value='177'>177 Tennis / Golfer elbow release</option>
+                  <option value='178'>178 Total Elbow replacement</option>
+                  <option value='353'>353 Total elbow replacement - aseptic revision</option>
+                  <option value='354'>354 Total elbow replacement revision 1st stage</option>
+                  <option value='355'>355 Total elbow replacement revision 2nd stage</option>
+                  <option value='356'>356 Total elbow replacement for trauma</option>
+                  <option value='448'>448 Irrigation and debridement prosthesis for infection - elbow</option>
+                  <option value='199'>199 Trapezium excision or replacement</option>
+                  <option value='191'>191 Dupuytrens contracture operation -other</option>
+                  <option value='336'>336 Dupuytrens contracture operation - dermofasciectomy</option>
+                  <option value='559'>559 Dupuytren's contracture operation - primary single digit</option>
+                  <option value='560'>560 Dupuytren's contracture operation - primary multiple digits</option>
+                  <option value='561'>561 Dupuytren's contracture operation - recurrent single digit </option>
+                  <option value='562'>562 Dupuytren's contracture operation - recurrent multiple digits</option>
+                  <option value='194'>194 MCPJ replacement</option>
+                  <option value='556'>556 PIPJ replacement - hand (silastic)</option>
+                  <option value='557'>557 PIPJ replacement - hand (other)</option>
+                  <option value='183'>183 Carpal tunnel decompression</option>
+                  <option value='411'>411 Proximal row carpectomy </option>
+                  <option value='182'>182 Arthrodesis wrist (includes partial arthrodesis)</option>
+                  <option value='540'>540 Latarjet procedure</option>
+                  <option value='373'>373 Irrigation and debridement native joint for infection - shoulder</option>
+                  <option value='011'>011 Balloon Arthroplasty</option>
+                  <option value='210'>210 Osteotomy hip - pelvic for DDH</option>
+                  <option value='206'>206 Arthroscopy hip - therapeutic</option>
+                  <option value='138'>138 Anterior decompression +/- fixation / fusion (C2 - C7)</option>
+                  <option value='142'>142 Posterior decompression +/- fixation / fusion (C2 - C7)</option>
+                  <option value='510'>510 Cervical disc replacement</option>
+                  <option value='511'>511 Revision cervical disectomy</option>
+                  <option value='517'>517 Cervical vertebrectomy for myelopathy</option>
+                  <option value='147'>147 Biopsy thoracic spine</option>
+                  <option value='427'>427 Vertebroplasty thoracic spine</option>
+                  <option value='154'>154 Decompression lumbar spine with fusion +/- fixation</option>
+                  <option value='532'>532 TLIF</option>
+                  <option value='533'>533 PLIF</option>
+                  <option value='534'>534 ALIF</option>
+                  <option value='10'>10 XLIF</option>
+                  <option value='152'>152 Discectomy open / micro lumbar spine</option>
+                  <option value='153'>153 Decompression lumbar spine without fusion (not discectomy alone)</option>
+                  <option value='431'>431 Vertebroplasty lumbar spine</option>
+                  <option value='529'>529 Revision lumbar discectomy</option>
+                  <option value='531'>531 Lumbar disc replacement</option>
+                  <option value='536'>536 Coccygectomy</option>
+                  <option value='234'>234 Osteotomy distal femoral</option>
+                  <option value='235'>235 Osteotomy proximal tibial</option>
+                  <option value='228'>228 Arthroscopy knee diagnostic</option>
+                  <option value='422'>422 Abrasion arthroplasty / microfracture - knee</option>
+                  <option value='95'>95 Acute haemarthrosis arthroscopy</option>
+                  <option value='392'>392 Meniscal repair (arthroscopic)</option>
+                  <option value='228'>228 Arthroscopy knee diagnostic</option>
+                  <option value='229'>229 Arthroscopic menisectomy</option>
+                  <option value='230'>230 Arthroscopic removal loose bodies knee</option>
+                  <option value='231'>231 Arthroscopic lateral release</option>
+                  <option value='232'>232 Arthroscopic synovectomy</option>
+                  <option value='233'>233 Arthroscopy knee other therapeutic procedure</option>
+                  <option value='585'>585 Arthroscopic excision of Hoffa's fat pad</option>
+                  <option value='419'>419 Osteochondral allografting - knee</option>
+                  <option value='421'>421 Mosaicplasty - knee</option>
+                  <option value='422'>422 Abrasion arthroplasty / microfracture - knee</option>
+                  <option value='227'>227 ACL reconstruction</option>
+                  <option value='589'>589 Revision ACL reconstruction</option>
+                  <option value='590'>590 ACL thermal shrinkage</option>
+                  <option value='416'>416 PCL reconstruction</option>
+                  <option value='96'>96 Acute ligament repair</option>
+                  <option value='104'>104 Quadriceps tendon repair</option>
+                  <option value='103'>103 Patella tendon repair</option>
+                  <option value='391'>391 Meniscal repair (open)</option>
+                  <option value='240'>240 TKR</option>
+                  <option value='241'>241 Unicompartmental knee replacement</option>
+                  <option value='418'>418 Patello-femoral joint replacement</option>
+                  <option value='239'>239 Patella resurfacing alone</option>
+                  <option value='236'>236 Single stage revision TKR</option>
+                  <option value='423'>423 1 stg of 2 stg rev infected TKR - removal of prosthesis +_ insertion of cement spacer / antibiotic beads</option>
+                  <option value='424'>424 2 stg of 2 stg rev infected TKR - removal of spacer/beads, insertion of prosthesis</option>
+                  <option value='396'>396 Revision TKR for periprosthetic fracture of knee</option>
+                  <option value='393'>393 Irrigation and debridement prosthesis for infection - knee</option>
+                  <option value='218'>218 THR cemented</option>
+                  <option value='219'>219 THR uncemented</option>
+                  <option value='220'>220  THR hybrid</option>
+                  <option value='221'>221 THR surface replacement</option>
+                  <option value='82'>82 Intracapsular fracture THR</option>
+                  <option value='86'>86 Dislocated total hip replacement - closed reduction</option>
+                  <option value='360'>360 Dislocated total hip replacement - open reduction</option>
+                  <option value='387'>387 Irrigation and debridement prosthesis for infection - hip </option>
+                  <option value='213'>213 Single stage revision THR femoral component</option>
+                  <option value='214'>214 Single stage revision THR acetabular component</option>
+                  <option value='215'>215 Single stage revision THR both components</option>
+                  <option value='386'>386 Revision THR for periprosthetic fracture of hip</option>
+                  <option value='414'>414 1 stg of 2 stg rev infected THR - removal of prosthesis +_ insertion of cement spacer / antibiotic beads</option>
+                  <option value='415'>415 2 stg of 2 stg rev infected THR - removal of spacer/beads, insertion of prosthesis</option>
+                  <option value='208'>208 Excision arthroplasty hip</option>
+                  <option value='388'>388 Irrigation and debridement native joint for infection - hip</option>
+         
+                  </select>
+              </datalist>
+              
+            <br>
+            <br>
+             SIDE: <input type = "radio" name = "side"  value ="right"> Right
+              <input type = "radio" name = "side"  value ="left"> Left
+            <br>
+
+           <P>Date of birth:</P>       Day
+<select name='day' id='dayddl'>
+<option value='0'>0</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+<option value='13'>13</option>
+<option value='14'>14</option>
+<option value='15'>15</option>
+<option value='16'>16</option>
+<option value='17'>17</option>
+<option value='18'>18</option>
+<option value='19'>19</option>
+<option value='20'>20</option>
+<option value='21'>21</option>
+<option value='22'>22</option>
+<option value='23'>23</option>
+<option value='24'>24</option>
+<option value='25'>25</option>
+<option value='26'>26</option>
+<option value='27'>27</option>
+<option value='28'>28</option>
+<option value='29'>29</option>
+<option value='30'>30</option>
+<option value='31'>31</option>
+</select>
+
+
+Month
+<select name='month' id='monthddl'>
+<option value='0'>0</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+</select>
+
+
+Year
+<select name='year' id='blah'>
+<option value='0'>0</option>
+<option value='1947'>1947</option>
+<option value='1948'>1948</option>
+<option value='1949'>1949</option>
+<option value='1950'>1950</option>
+<option value='1951'>1951</option>
+<option value='1952'>1952</option>
+<option value='1953'>1953</option>
+<option value='1954'>1954</option>
+<option value='1955'>1955</option>
+<option value='1956'>1956</option>
+<option value='1957'>1957</option>
+<option value='1958'>1958</option>
+<option value='1959'>1959</option>
+<option value='1960'>1960</option>
+<option value='1961'>1961</option>
+<option value='1962'>1962</option>
+<option value='1963'>1963</option>
+<option value='1964'>1964</option>
+<option value='1965'>1965</option>
+<option value='1966'>1966</option>
+<option value='1967'>1967</option>
+<option value='1968'>1968</option>
+<option value='1969'>1969</option>
+<option value='1970'>1970</option>
+<option value='1971'>1971</option>
+<option value='1972'>1972</option>
+<option value='1973'>1973</option>
+<option value='1974'>1974</option>
+<option value='1975'>1975</option>
+<option value='1976'>1976</option>
+<option value='1977'>1977</option>
+<option value='1978'>1978</option>
+<option value='1979'>1979</option>
+<option value='1980'>1980</option>
+<option value='1981'>1981</option>
+<option value='1982'>1982</option>
+<option value='1983'>1983</option>
+<option value='1984'>1984</option>
+<option value='1985'>1985</option>
+<option value='1986'>1986</option>
+<option value='1987'>1987</option>
+<option value='1988'>1988</option>
+<option value='1989'>1989</option>
+<option value='1990'>1990</option>
+<option value='1991'>1991</option>
+<option value='1992'>1992</option>
+<option value='1993'>1993</option>
+<option value='1994'>1994</option>
+<option value='1995'>1995</option>
+<option value='1996'>1996</option>
+<option value='1997'>1997</option>
+<option value='1998'>1998</option>
+<option value='1999'>1999</option>
+<option value='2000'>2000</option>
+<option value='2001'>2001</option>
+<option value='2002'>2002</option>
+<option value='2003'>2003</option>
+<option value='2004'>2004</option>
+<option value='2005'>2005</option>
+<option value='2006'>2006</option>
+<option value='2007'>2007</option>
+<option value='2008'>2008</option>
+<option value='2009'>2009</option>
+<option value='2010'>2010</option>
+<option value='2011'>2011</option>
+<option value='2012'>2012</option>
+<option value='2013'>2013</option>
+<option value='2014'>2014</option>
+<option value='2015'>2015</option>
+<option value='2016'>2016</option>
+<option value='2017'>2017</option>
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+<option value='2020'>2020</option>
+<option value='2021'>2021</option>
+<option value='2022'>2022</option>
+<option value='2023'>2023</option>
+<option value='2024'>2024</option>
+<option value='2025'>2025</option>
+<option value='2026'>2026</option>
+<option value='2027'>2027</option>
+<option value='2028'>2028</option>
+<option value='2029'>2029</option>
+<option value='2030'>2030</option>
+<option value='2031'>2031</option>
+<option value='2032'>2032</option>
+<option value='2033'>2033</option>
+<option value='2034'>2034</option>
+<option value='2035'>2035</option>
+<option value='2036'>2036</option>
+<option value='2037'>2037</option>
+<option value='2038'>2038</option>
+</select>
+          
+           
+	<br>					 
+  <P>Operation Date:</P>       Day
+<select name='day2' id='dayddl'>
+<option value='0'>0</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+<option value='13'>13</option>
+<option value='14'>14</option>
+<option value='15'>15</option>
+<option value='16'>16</option>
+<option value='17'>17</option>
+<option value='18'>18</option>
+<option value='19'>19</option>
+<option value='20'>20</option>
+<option value='21'>21</option>
+<option value='22'>22</option>
+<option value='23'>23</option>
+<option value='24'>24</option>
+<option value='25'>25</option>
+<option value='26'>26</option>
+<option value='27'>27</option>
+<option value='28'>28</option>
+<option value='29'>29</option>
+<option value='30'>30</option>
+<option value='31'>31</option>
+</select>
+
+
+Month
+<select name='month2' id='monthddl'>
+<option value='0'>0</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+</select>
+
+
+Year
+<select name='year2' id='blah'>
+<option value='0'>0</option>
+<option value='2015'>2015</option>
+<option value='2016'>2016</option>
+<option value='2017'>2017</option>
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+<option value='2020'>2020</option>
+<option value='2021'>2021</option>
+<option value='2022'>2022</option>
+<option value='2023'>2023</option>
+<option value='2024'>2024</option>
+<option value='2025'>2025</option>
+<option value='2026'>2026</option>
+<option value='2027'>2027</option>
+<option value='2028'>2028</option>
+<option value='2029'>2029</option>
+<option value='2030'>2030</option>
+<option value='2031'>2031</option>
+<option value='2032'>2032</option>
+<option value='2033'>2033</option>
+<option value='2034'>2034</option>
+<option value='2035'>2035</option>
+<option value='2036'>2036</option>
+<option value='2037'>2037</option>
+<option value='2038'>2038</option>
+</select>
+            
+              <br><input type="submit" name= "Add" value="Add">
+</form>
+       
+       </div>
+
+<style>
+#page-wrap {
+     width:  1200px;
+     margin: 50px auto;
+
+
+      button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #FF0000;
+    border-radius: 8px;
+    
+}
+
+.submitbtn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    border-radius: 8px;
+}
+</style>
+
+
+    </body>
+</html>

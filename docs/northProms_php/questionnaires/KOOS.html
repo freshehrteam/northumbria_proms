@@ -1,0 +1,385 @@
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NHS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../home.html">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+
+  <style>
+body{
+  /*background-image: url("http://www.europeanceo.comwp-content/uploads/2014/01/Stethoscope.jpg");*/
+    background-position: center;
+  background-size: cover;
+  font-weight: bold;
+}
+</style>
+
+<!-------------------------CSS----------------------------above---------->
+
+
+<!-- html page for patient to answer quesionnaire and post the answers for quesrionnare to corresponding php code by form handling -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+
+    
+        <div id=page-wrap
+    <title>KOOS</title>
+
+     <style>
+    h1{
+      border-bottom-style: solid;
+
+    }
+h1{
+      font-family: serif;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    p{
+      
+      font-weight: bold;
+    }
+
+    input{
+      margin: 20px;
+      display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=submit]{
+    background-color: #007A25;
+    color: white;
+    padding: 8px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    </style>
+    
+     </head>
+    
+    <body>
+    
+      
+        <div id=page-wrap
+             <h2> KOOS KNEE SURVEY</h2>
+
+        <P>INSTRUCTIONS: This survey asks for your view about your knee. This information will help us keep track of how you feel about your knee and how well you are able to perform your usual activities.
+Answer every question by ticking the appropriate box, only one box for each question. If you are unsure about how to answer a question, please give the best answer you can..</P>
+
+        <form action="KOOS.php" method="post">
+        
+            
+           
+   <h2>Symptoms
+These questions should be answered thinking of your knee symptoms during the last week.</h2>
+        
+            
+            <p>S1. Do you have swelling in your knee?</p>
+            <input type="text" name="q1" ><br>
+      
+        
+     <p>S2. Do you feel grinding, hear clicking or any other type of noise when your knee moves?</p>
+            <input type="text" name="q2" ><br>
+            
+                 <p>S3. Does your knee catch or hang up when moving?</p>
+            <input type="text" name="q3" ><br>
+            
+                 <p>S4. Can you straighten your knee fully?</p>
+            <input type="text" name="q4" ><br>
+            
+                  <p>S5. Can you bend your knee fully?</p>
+            <input type="text" name="q5" ><br>
+            
+            <p>Stiffness
+The following questions concern the amount of joint stiffness you have experienced during the last week in your knee. Stiffness is a sensation of restriction or slowness in the ease with which you move your knee joint.</p>
+           
+            <p>S6. How severe is your knee joint stiffness after first wakening in the morning?</p>
+            <input type="text" name="q6" ><br>
+            
+            <p>S7. How severe is your knee stiffness after sitting, lying or resting later in the day?</p>
+            <input type="text" name="q7" ><br>
+            
+            
+            
+            <h2>Pain</h2>
+        
+           
+                <p>P1. How often do you experience knee pain?</p>
+            <input type="text" name="q8" ><br>
+            <p>What amount of knee pain have you experienced the last week during the following activities?</p>
+             
+            <p>P2. Twisting/pivoting on your knee</p>
+            <input type="text" name="q9" ><br>
+            
+             <p>
+P3. Straightening knee fully</p>
+            <input type="text" name="q10" ><br>
+            
+             <p>P4. Bending knee fully</p>
+            <input type="text" name="q11" ><br>
+            
+             <p>P5. Walking on flat surface</p>
+            <input type="text" name="q12" ><br>
+            
+             <p>
+P6. Going up or down stairs</p>
+            <input type="text" name="q13" ><br>
+            
+             <p>P7. At night while in bed</p>
+            <input type="text" name="q14" ><br>
+            
+            <p>P8. Sitting or lying</p>
+            <input type="text" name="q15" ><br>
+            
+            <p>P9. Standing upright</p>
+            <input type="text" name="q16" ><br>
+            
+            
+            <P>Function, daily living
+The following questions concern your physical function. By this we mean your ability to move around and to look after yourself. For each of the following activities please indicate the degree of difficulty you have experienced in the last week due to your knee.</P>
+            
+                 <p>
+A1. Descending stairs</p>
+            <input type="text" name="q17" ><br>
+            
+                          <p>A2. Ascending stairs</p>
+            <input type="text" name="q18" ><br>
+            
+            <P>For each of the following activities please indicate the degree of difficulty you have experienced in the last week due to your knee.</P>
+            
+                          <p>
+A3. Rising from sitting</p>
+            <input type="text" name="q19" ><br>
+            
+                          <p>A4. Standing</p>
+            <input type="text" name="q20" ><br>
+            
+                          <p>A5. Bending to floor/pick up an object</p>
+            <input type="text" name="q21" ><br>
+            
+                          <p>A6. Walking on flat surface</p>
+            <input type="text" name="q22" ><br>
+            
+                          <p>A7. Getting in/out of car</p>
+            <input type="text" name="q23" ><br>
+            
+                          <p>A8. Going shopping</p>
+            <input type="text" name="q24" ><br>
+            
+                          <p>A9. Putting on socks/stockings</p>
+            <input type="text" name="q25" ><br>
+            
+                          <p>A10. Rising from bed</p>
+            <input type="text" name="q26" ><br>
+            
+                          <p>A11. Taking off socks/stockings</p>
+            <input type="text" name="q27" ><br>
+            
+                          <p>A12. Lying in bed (turning over, maintaining knee position)</p>
+            <input type="text" name="q28" ><br>
+            
+                          <p>
+A13. Getting in/out of bath</p>
+            <input type="text" name="q29" ><br>
+            
+                          <p>A14. Sitting</p>
+            <input type="text" name="q30" ><br>
+            
+                          <p>A15. Getting on/off toilet</p>
+            <input type="text" name="q31" ><br>
+            
+            <P>For each of the following activities please indicate the degree of difficulty you have experienced in the last week due to your knee.</P>
+                          <p>A16. Heavy domestic duties (moving heavy boxes, scrubbing floors, etc)</p>
+            <input type="text" name="q32" ><br>
+            
+                          <p>A17. Light domestic duties (cooking, dusting, etc)</p>
+            <input type="text" name="q33" ><br>
+            
+            
+            <P>Function, sports and recreational activities
+The following questions concern your physical function when being active on a higher level. The questions should be answered thinking of what degree of difficulty you have experienced during the last week due to your knee.
+</P>
+            
+            <p>SP1. Squatting</p>
+            <input type="text" name="q34" ><br>
+            
+              <p>SP2. Running</p>
+            <input type="text" name="q35" ><br>
+            
+            
+              <p>SP3. Jumping</p>
+            <input type="text" name="q36" ><br>
+            
+            
+              <p>SP4. Twisting/pivoting on your injured knee</p>
+            <input type="text" name="q37" ><br>
+            
+            
+              <p>
+SP5. Kneeling</p>
+            <input type="text" name="q38" ><br>
+            
+            
+            <P>Quality of Life</P>
+            
+              <p>Q1. How often are you aware of your knee problem?</p>
+            <input type="text" name="q39" ><br>
+            
+            
+              <p>Q2. Have you modified your life style to avoid potentially damaging activities to your knee?</p>
+            <input type="text" name="q40" ><br>
+            
+            
+              <p>Q3. How much are you troubled with lack of confidence in your knee?</p>
+            <input type="text" name="q41" ><br>
+            
+            
+              <p>Q4. In general, how much difficulty do you have with your knee?</p>
+            <input type="text" name="q42" ><br>
+            
+            
+            
+               Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>       
+            
+            
+            
+            <P>Anwering date:</P>       Day
+<select name='day' id='dayddl'>
+<option value='0'>0</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+<option value='13'>13</option>
+<option value='14'>14</option>
+<option value='15'>15</option>
+<option value='16'>16</option>
+<option value='17'>17</option>
+<option value='18'>18</option>
+<option value='19'>19</option>
+<option value='20'>20</option>
+<option value='21'>21</option>
+<option value='22'>22</option>
+<option value='23'>23</option>
+<option value='24'>24</option>
+<option value='25'>25</option>
+<option value='26'>26</option>
+<option value='27'>27</option>
+<option value='28'>28</option>
+<option value='29'>29</option>
+<option value='30'>30</option>
+<option value='31'>31</option>
+</select>
+
+
+Month
+<select name='month' id='monthddl'>
+<option value='0'>0</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+<option value='11'>11</option>
+<option value='12'>12</option>
+</select>
+
+
+Year
+<select name='year' id='blah'>
+<option value='0'>0</option>
+<option value='2015'>2015</option>
+<option value='2016'>2016</option>
+<option value='2017'>2017</option>
+<option value='2018'>2018</option>
+<option value='2019'>2019</option>
+<option value='2020'>2020</option>
+<option value='2021'>2021</option>
+<option value='2022'>2022</option>
+<option value='2023'>2023</option>
+<option value='2024'>2024</option>
+<option value='2025'>2025</option>
+<option value='2026'>2026</option>
+<option value='2027'>2027</option>
+<option value='2028'>2028</option>
+<option value='2029'>2029</option>
+<option value='2030'>2030</option>
+<option value='2031'>2031</option>
+<option value='2032'>2032</option>
+<option value='2033'>2033</option>
+<option value='2034'>2034</option>
+<option value='2035'>2035</option>
+<option value='2036'>2036</option>
+<option value='2037'>2037</option>
+<option value='2038'>2038</option>
+</select>
+            <br>
+     <br> <input type="submit" name= "submit" value="submit">
+      
+      
+ 
+      <br>
+</form>
+
+   <style>
+#page-wrap {
+     width:  1200px;
+     margin: 50px auto;
+
+
+      button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #FF0000;
+    border-radius: 8px;
+    
+}
+
+.submitbtn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    border-radius: 8px;
+}
+</style>
+    </body>
+</html>

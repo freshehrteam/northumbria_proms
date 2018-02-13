@@ -1,0 +1,356 @@
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">NHS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="../home.html">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Log Out</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  
+
+<style>
+body{
+  /*background-image: url("http://www.europeanceo.comwp-content/uploads/2014/01/Stethoscope.jpg");*/
+    background-position: center;
+  background-size: 100%;
+  font-weight: bold;
+}
+</style>
+
+<!-------------------------CSS----------------------------above---------->
+
+
+
+
+<!---  user can choose the questionnaire they want to export, then the form will go to different php code         -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<div id="page-wrap">
+    <title>Questionnaire</title>
+
+    <style>
+    h1{
+      border-bottom-style: solid;
+
+    }
+
+    input{
+      margin: 10px;
+      display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=submit]{
+    background-color: #007A25;
+    color: white;
+    padding: 8px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ h1{
+      font-family: serif;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    </style>
+
+     </head>
+    
+    <body>
+<div id="page-wrap">
+
+    <h1> Export database into Excel</h1>
+       
+        <form action = "exportPatientInfo.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table patientInfo" class = "btn btn-success">
+            
+        </form>
+         <form action = "exportEQ5D.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table EQ5D VAS" class = "btn btn-success">
+            
+        </form>
+        
+         </form>
+         <form action = "exportEQ5D3.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table EQ5D3" class = "btn btn-success">
+            
+        </form>
+        
+          </form>
+         <form action = "exportEQ5D5.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table EQ5D5" class = "btn btn-success">
+            
+        </form>
+  
+
+
+<h2>Foot and Ankel questionnaires</h2>      
+          <form action = "exportAOFAS.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table AOFAS" class = "btn btn-success">
+            
+        </form>
+        
+                <form action = "exportAOS.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table AOS" class = "btn btn-success">
+            
+        </form>
+
+
+                <form action = "exportATRS.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table ATRS" class = "btn btn-success">
+            
+        </form>
+      <form action = "exportCOFAS.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table COFAS" class = "btn btn-success">
+            
+        </form>
+
+   <form action = "exportMOXFQ.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table MOXFQ" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportFootAndAnkelOutcome.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table footAndAnkelOutcome" class = "btn btn-success">
+            
+        </form>
+
+
+<form action = "exportPainVAS.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table painVas" class = "btn btn-success">
+            
+        </form>
+      
+
+<form action = "exportSAFAS.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table SAFAS" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportVISAA.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table VISAA" class = "btn btn-success">
+            
+        </form>
+
+    <form action = "exportCOFAS.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table COFAS" class = "btn btn-success">
+            
+        </form>
+
+
+
+
+<h2>HIP</h2> 
+<form action = "exportiHOT12.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table iHOT12" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportNAHSR.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table NAHSR" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportNAHSRsatisfation.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table NAHSRsatisfation" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportOHS.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table OHS" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportUCLAactivity.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table UCLAactvity" class = "btn btn-success">
+            
+        </form>
+
+
+
+<h2>KEEN</h2> 
+
+      <form action = "exportIKDC.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table IKDC" class = "btn btn-success">
+            
+        </form>
+
+  <form action = "exportKOOS.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table KOOS" class = "btn btn-success">
+            
+        </form>
+
+  <form action = "exportOKSandAandP.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table OKSandAandP" class = "btn btn-success">
+            
+        </form>
+  <form action = "exportKeenOutcome.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table keenOutcome" class = "btn btn-success">
+            
+        </form>
+
+  <form action = "exportOxfordKeenScore.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table OxfordKeenScore(oks)" class = "btn btn-success">
+            
+        </form>
+  <form action = "exportTegnerActivity.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table TegnerActivity" class = "btn btn-success">
+            
+        </form>
+
+
+
+<h2>Spine</h2>
+
+  <form action = "exportMDI.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table MDI" class = "btn btn-success">
+            
+        </form>
+
+  <form action = "exportNDI.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table NDI" class = "btn btn-success">
+            
+        </form>
+
+  <form action = "exportODI.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table ODI" class = "btn btn-success">
+            
+        </form>
+
+  <form action = "exportSpineOutcome.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table spineOutcome" class = "btn btn-success">
+            
+        </form>
+
+  <form action = "exportBackAndLegPain.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table BackAndLegPain" class = "btn btn-success">
+            
+        </form>
+
+  <form action = "exportNeckAndArmPain.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table NeckAndArmPain" class = "btn btn-success">
+            
+        </form>
+
+
+<h2>Upper limb</h2>
+
+
+
+<form action = "exportBOSTON.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table BOSTON" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportOES.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table OES" class = "btn btn-success">
+            
+        </form>
+<form action = "exportOSS.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table OSS" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportOSI.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table OSI" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportPEM.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table PEM" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportURAM.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table URAM" class = "btn btn-success">
+            
+        </form>
+
+<form action = "exportQDASH.php" method = "post">
+      
+             <input type = "submit" name = "export_excel" value = "export table QDASH" class = "btn btn-success">
+            
+        </form>
+
+        
+<style>
+#page-wrap {
+     width:  1200px;
+     margin: 50px auto;
+
+
+      button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #FF0000;
+    border-radius: 8px;
+    
+}
+
+.submitbtn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    border-radius: 8px;
+}
+</style>
+
+    </body>
+</html>
