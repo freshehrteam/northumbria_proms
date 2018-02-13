@@ -923,7 +923,7 @@
       <Rule path="/protocol[at0005]" hide_on_form="true" />
     </Content>
     <Context>
-      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.episode_details_northproms.v0" concept_name="Episode details Northumbria Orthopaedic PROMS" path="/context/other_context[at0001]/items[at0006]" />
+      <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.episode_details_northproms.v0" concept_name="Episode details Northumbria Orthopaedic PROMS" max="1" path="/context/other_context[at0001]/items[at0006]" name="Episode details" />
       <Rule path="/context/other_context[at0001]" hide_on_form="true" />
       <Rule path="/context/other_context[at0001]/items[at0002]" max="0" />
       <Rule path="/context/other_context[at0001]/items[at0005]" max="0" />
