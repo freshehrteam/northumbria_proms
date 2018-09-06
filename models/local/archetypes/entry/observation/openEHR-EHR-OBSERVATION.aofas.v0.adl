@@ -2,43 +2,45 @@
 	openEHR-EHR-OBSERVATION.aofas.v0
 
 concept
-	[at0000]	-- AOFAS Score
+	[at0000]	-- AOFAS
 language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["date"] = <"2017-10-02">
 	>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"For the recording of subjective assessment for completion by patient of ankle or hindfoot pain and function.">
-			use = <"Use to record patient-reported ankle or hindfoot pain and function assessment.">
-			misuse = <"">
+			use = <"Use to record patient-reported ankle or hindfoot pain and function assessment.
+
+While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists.">
+			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
 			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"NotSet">
 	other_contributors = <>
 	other_details = <
+		["MD5-CAM-1.0.1"] = <"4786E666CAD62860BEE4B008715D3FF8">
+		["original_publisher"] = <"UK Clinical Models">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["build_uid"] = <"9707059b-757a-4281-b321-7d01008ef1d0">
+		["original_namespace"] = <"uk.org.clinicalmodels">
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"UK Clinical Models">
 		["references"] = <"http://www.aofas.org/about/Pages/about.aspx cited 02-Oct-2017
 http://www.northlondonfootclinic.co.uk/download.php?download=hindfoot-surgery-assessment-form.pdf cited 02-Oct-2017">
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["original_namespace"] = <"uk.org.clinicalmodels">
-		["original_publisher"] = <"UK Clinical Models">
-		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"15F3F798FEAD832164609AC430843C76">
-		["build_uid"] = <"9707059b-757a-4281-b321-7d01008ef1d0">
 		["revision"] = <"0.0.1-alpha">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["custodian_organisation"] = <"UK Clinical Models">
 	>
 
 definition
-	OBSERVATION[at0000] matches {	-- AOFAS Score
+	OBSERVATION[at0000] matches {	-- AOFAS
 		data matches {
 			HISTORY[at0001] matches {	-- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -119,15 +121,14 @@ definition
 		}
 	}
 
-
 ontology
 	terminologies_available = <"en", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"AOFAS Score">
-					description = <"American Orthopaedic Foot and Ankle Society Score.">
+					text = <"AOFAS">
+					description = <"American Orthopaedic Foot and Ankle Society Score (AOFAS).">
 				>
 				["at0001"] = <
 					text = <"Event Series">

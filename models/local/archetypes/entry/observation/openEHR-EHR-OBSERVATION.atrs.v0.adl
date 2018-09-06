@@ -2,14 +2,14 @@
 	openEHR-EHR-OBSERVATION.atrs.v0
 
 concept
-	[at0000]	-- ATRS Score
+	[at0000]	-- ATRS
 language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["date"] = <"2017-10-02">
 	>
 	details = <
@@ -18,28 +18,28 @@ description
 			purpose = <"For the capture and reporting of patient-reported limitations and difficulties relating to Achilles tendon injury (ATRS = Achilles Tendon Total Rupture Score).">
 			use = <"Use to record patient-reported limitations and difficulties relating to injured Achilles tendon.
 
-While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. ">
+While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists.">
 			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
 			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"NotSet">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"UK Clinical Models">
-		["references"] = <"http://www.londonorthopaedicsurgery.co.uk/media/1467/ATRS-questionnaire.pdf cited 02-Oct-2017">
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["original_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"C6984A0F14AD71501FFA89812FC7A497">
 		["original_publisher"] = <"UK Clinical Models">
-		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"47A9D1B448528B96631A7A68885D9D11">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["build_uid"] = <"1d94d904-434c-4aa0-b209-e472f4c15b9a">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["references"] = <"http://www.londonorthopaedicsurgery.co.uk/media/1467/ATRS-questionnaire.pdf cited 02-Oct-2017">
 		["revision"] = <"0.0.1-alpha">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["custodian_organisation"] = <"UK Clinical Models">
 	>
 
 definition
-	OBSERVATION[at0000] matches {	-- ATRS Score
+	OBSERVATION[at0000] matches {	-- ATRS
 		data matches {
 			HISTORY[at0001] matches {	-- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -154,15 +154,14 @@ definition
 		}
 	}
 
-
 ontology
 	terminologies_available = <"en", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"ATRS Score">
-					description = <"Achilles Tendon Total Rupture Score.">
+					text = <"ATRS">
+					description = <"Achilles Tendon Total Rupture Score (ATRS).">
 				>
 				["at0001"] = <
 					text = <"Event Series">

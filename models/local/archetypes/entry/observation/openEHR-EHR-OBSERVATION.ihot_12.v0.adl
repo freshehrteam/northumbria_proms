@@ -1,0 +1,64 @@
+﻿archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.ihot_12.v0
+
+concept
+	[at0000]	-- IHOT-12
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For the recording and reporting of patient-reported problems, concerns and limitations as assessed by the International Hip Outcome Tool 12-item questionnaire (IHOT-12).">
+			use = <"Use to record patient-reported problems, concerns and limitations as assessed by the International Hip Outcome Tool 12-item questionnaire (IHOT-12).
+
+IHOT-12 is a short version of IHOT-33.
+
+">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"Initial">
+	other_contributors = <>
+	other_details = <
+		["references"] = <"http://www.orthopedicsmagazine.com/foundation/documents/new/Arthroscopy%202012%20Griffin,%20...,%20Larson.%20A%20Short%20Verson%20of%20the%20iHOT-12.pdf cited 23-Aug-2018
+
+">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["MD5-CAM-1.0.1"] = <"B0C2568327699B54CA2B2317DDD31A05">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- IHOT-12
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"IHOT-12">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"*">
+				>
+			>
+		>
+	>

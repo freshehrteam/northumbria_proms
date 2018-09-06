@@ -2,14 +2,14 @@
 	openEHR-EHR-OBSERVATION.visaa.v0
 
 concept
-	[at0000]	-- VISA-A questionnaire
+	[at0000]	-- VISA-A
 language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["date"] = <"2017-10-23">
 	>
 	details = <
@@ -20,28 +20,28 @@ description
 
 This questionnaire is a patient-reported outcome measure (PROM) for foot and ankle surgery.
 
-While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists. ">
+While openEHR archetypes are all freely available under an open license, the specific content of this archetype may be copyright protected. Any use of this archetype within implementations must be in compliance with the terms established by the copyright owners where a copyright exists.">
 			misuse = <"Not to be used unless the terms of copyright have been observed (if a copyright exists).">
 			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"NotSet">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"UK Clinical Models">
-		["references"] = <"https://www.physio-pedia.com/VISA-A_scale cited 23-Oct-2017">
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["original_namespace"] = <"uk.org.clinicalmodels">
+		["MD5-CAM-1.0.1"] = <"697B40D7182637477DE58261BBE468C8">
 		["original_publisher"] = <"UK Clinical Models">
-		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"AD72FFBC053D76F93027DCD541E8BA3E">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
 		["build_uid"] = <"a9c7fa1d-b950-4d07-9627-334423be9945">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["references"] = <"https://www.physio-pedia.com/VISA-A_scale cited 23-Oct-2017">
 		["revision"] = <"0.0.1-alpha">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["custodian_organisation"] = <"UK Clinical Models">
 	>
 
 definition
-	OBSERVATION[at0000] matches {	-- VISA-A questionnaire
+	OBSERVATION[at0000] matches {	-- VISA-A
 		data matches {
 			HISTORY[at0001] matches {	-- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -178,14 +178,13 @@ definition
 		}
 	}
 
-
 ontology
 	terminologies_available = <"en", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"VISA-A questionnaire">
+					text = <"VISA-A">
 					description = <"VISA-A questionnaire: an index of the severity of Achilles tendinopathy.">
 				>
 				["at0001"] = <

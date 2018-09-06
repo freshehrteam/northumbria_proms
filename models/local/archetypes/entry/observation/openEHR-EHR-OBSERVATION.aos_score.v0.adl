@@ -2,14 +2,14 @@
 	openEHR-EHR-OBSERVATION.aos_score.v0
 
 concept
-	[at0000]	-- Ankle Osteoarthritis Score
+	[at0000]	-- AOS
 language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["date"] = <"2017-10-25">
 	>
 	details = <
@@ -23,23 +23,23 @@ While openEHR archetypes are all freely available under an open license, the spe
 			copyright = <"© Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"NotSet">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"UK Clinical Models">
-		["references"] = <"www.researchgate.net/publication/299098820_Ankle_osteoarthritis_scale cited 25-Oct-2017.">
-		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
-		["original_namespace"] = <"uk.org.clinicalmodels">
-		["original_publisher"] = <"UK Clinical Models">
-		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"EA3E4DC6B15742FB71A0DC5ADB78B63A">
-		["build_uid"] = <"180a4d33-cafe-4a06-a4d0-9943419b0573">
 		["revision"] = <"0.0.1-alpha">
+		["original_publisher"] = <"UK Clinical Models">
+		["current_contact"] = <"Hildegard Franke, freshEHR Clinical Informatics Ltd.<hildi@freshehr.com>">
+		["build_uid"] = <"180a4d33-cafe-4a06-a4d0-9943419b0573">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["references"] = <"www.researchgate.net/publication/299098820_Ankle_osteoarthritis_scale cited 25-Oct-2017.">
+		["MD5-CAM-1.0.1"] = <"3901358B13278C9477BC1F26F4A8510E">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["custodian_organisation"] = <"UK Clinical Models">
 	>
 
 definition
-	OBSERVATION[at0000] matches {	-- Ankle Osteoarthritis Score
+	OBSERVATION[at0000] matches {	-- AOS
 		data matches {
 			HISTORY[at0001] matches {	-- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -246,15 +246,14 @@ definition
 		}
 	}
 
-
 ontology
 	terminologies_available = <"en", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Ankle Osteoarthritis Score">
-					description = <"Ankle Osteoarthritis Score questionnaire.">
+					text = <"AOS">
+					description = <"Ankle Osteoarthritis Score (AOS) questionnaire.">
 				>
 				["at0001"] = <
 					text = <"Event Series">

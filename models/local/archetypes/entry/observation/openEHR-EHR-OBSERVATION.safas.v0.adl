@@ -2,14 +2,14 @@
 	openEHR-EHR-OBSERVATION.safas.v0
 
 concept
-	[at0000]	-- SAFAS Score
+	[at0000]	-- SAFAS
 language
 	original_language = <[ISO_639-1::en]>
 description
 	original_author = <
 		["name"] = <"Hildegard Franke">
-		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["email"] = <"hildi@freshehr.com">
+		["organisation"] = <"freshEHR Clinical Informatics Ltd.">
 		["date"] = <"2017-10-24">
 	>
 	details = <
@@ -24,21 +24,21 @@ While openEHR archetypes are all freely available under an open license, the spe
 			copyright = <"© openEHR Foundation, Clinical Models UK">
 		>
 	>
-	lifecycle_state = <"in_development">
+	lifecycle_state = <"NotSet">
 	other_contributors = <>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-		["custodian_organisation"] = <"UK Clinical Models">
-		["original_namespace"] = <"uk.org.clinicalmodels">
-		["original_publisher"] = <"UK Clinical Models">
-		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"6FFD1F244B9D521028304196AF8502C2">
-		["build_uid"] = <"0a797e2f-f5bc-4b91-8792-8db44ecb6582">
 		["revision"] = <"0.0.1-alpha">
+		["original_publisher"] = <"UK Clinical Models">
+		["build_uid"] = <"0a797e2f-f5bc-4b91-8792-8db44ecb6582">
+		["original_namespace"] = <"uk.org.clinicalmodels">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["MD5-CAM-1.0.1"] = <"57C5288F758D04929C4B4863CC2A16C6">
+		["custodian_namespace"] = <"uk.org.clinicalmodels">
+		["custodian_organisation"] = <"UK Clinical Models">
 	>
 
 definition
-	OBSERVATION[at0000] matches {	-- SAFAS Score
+	OBSERVATION[at0000] matches {	-- SAFAS
 		data matches {
 			HISTORY[at0001] matches {	-- History
 				events cardinality matches {1..*; unordered} matches {
@@ -477,15 +477,14 @@ definition
 		}
 	}
 
-
 ontology
 	terminologies_available = <"en", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"SAFAS Score">
-					description = <"Sports Athlete Foot and Ankle Score.">
+					text = <"SAFAS">
+					description = <"Sports Athlete Foot and Ankle Score (SAFAS).">
 				>
 				["at0001"] = <
 					text = <"History">

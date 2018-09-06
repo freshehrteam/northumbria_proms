@@ -861,28 +861,28 @@
     </items>
   </annotations>
   <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="Foot and ankle PROMs">
-    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.aofas.v0" concept_name="AOFAS Score" path="/content">
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.aofas.v0" concept_name="AOFAS" path="/content">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/state[at0006]" hide_on_form="true" />
       <Rule path="/protocol[at0004]" hide_on_form="true" />
     </Content>
-    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.aos_score.v0" concept_name="Ankle Osteoarthritis Score" path="/content">
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.aos_score.v0" concept_name="AOS" path="/content">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/state[at0006]" hide_on_form="true" />
       <Rule path="/protocol[at0004]" hide_on_form="true" />
     </Content>
-    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.atrs.v0" concept_name="ATRS Score" path="/content">
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.atrs.v0" concept_name="ATRS" path="/content">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/state[at0006]" hide_on_form="true" />
       <Rule path="/protocol[at0004]" hide_on_form="true" />
     </Content>
-    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.moxfq.v0" concept_name="MOXFQ Score" path="/content">
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.moxfq.v0" concept_name="MOXFQ" path="/content">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
@@ -901,14 +901,14 @@
       <Rule path="/protocol[at0007]" hide_on_form="true" />
       <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.pain_vas.v0" concept_name="Pain VAS" path="/data[at0001]/events[at0002]/data[at0003]/items[at0006]" />
     </Content>
-    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.safas.v0" concept_name="SAFAS Score" path="/content">
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.safas.v0" concept_name="SAFAS" path="/content">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/state[at0004]" hide_on_form="true" />
       <Rule path="/protocol[at0011]" hide_on_form="true" />
     </Content>
-    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.visaa.v0" concept_name="VISA-A questionnaire" path="/content">
+    <Content xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.visaa.v0" concept_name="VISA-A" path="/content">
       <Rule path="/data[at0001]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
       <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
@@ -937,16 +937,16 @@
     <digest id="MD5-CAM-1.0.1">5F483D9FE5344C3EF8AE7641861A8CF3</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.aofas.v0">
-    <digest id="MD5-CAM-1.0.1">15F3F798FEAD832164609AC430843C76</digest>
+    <digest id="MD5-CAM-1.0.1">4786E666CAD62860BEE4B008715D3FF8</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.aos_score.v0">
-    <digest id="MD5-CAM-1.0.1">EA3E4DC6B15742FB71A0DC5ADB78B63A</digest>
+    <digest id="MD5-CAM-1.0.1">3901358B13278C9477BC1F26F4A8510E</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.atrs.v0">
-    <digest id="MD5-CAM-1.0.1">47A9D1B448528B96631A7A68885D9D11</digest>
+    <digest id="MD5-CAM-1.0.1">C6984A0F14AD71501FFA89812FC7A497</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.moxfq.v0">
-    <digest id="MD5-CAM-1.0.1">90D23C4494D9E69F6D4519A399CFDB4B</digest>
+    <digest id="MD5-CAM-1.0.1">0C00922A5D2501B587732EB3AE0D7A24</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.story.v1">
     <digest id="MD5-CAM-1.0.1">1A6AFF556A3135480517C4E830985332</digest>
@@ -955,10 +955,10 @@
     <digest id="MD5-CAM-1.0.1">1019D8BBB744A0EF5524223458710948</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.safas.v0">
-    <digest id="MD5-CAM-1.0.1">6FFD1F244B9D521028304196AF8502C2</digest>
+    <digest id="MD5-CAM-1.0.1">57C5288F758D04929C4B4863CC2A16C6</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.visaa.v0">
-    <digest id="MD5-CAM-1.0.1">AD72FFBC053D76F93027DCD541E8BA3E</digest>
+    <digest id="MD5-CAM-1.0.1">697B40D7182637477DE58261BBE468C8</digest>
   </integrity_checks>
   <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.foot_and_ankle_outcome.v0">
     <digest id="MD5-CAM-1.0.1">1127718A2C62682BF5CFD4A01BDEF409</digest>
